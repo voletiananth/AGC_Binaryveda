@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_style" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_condensed_light</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/cron_flower_blue</item>
+    </style>
+    <style name="text_style_2" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_extra_light</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_style_3" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="text_style_4" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_condensed_light</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_style_5" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_condensed_medium</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_style_6" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <item name="android:textSize">@dimen/_32sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_style_7" parent="text_style_3">
+        <item name="android:textSize">@dimen/_24sp</item>
+        <item name="android:textColor">@color/cron_flower_blue</item>
+    </style>
+    <style name="text_style_9" parent="text_style_4">
+        <item name="android:textSize">@dimen/_16sp</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="SwitchStyle" >
+        <item name="android:thumb">@drawable/ic_switch_thumb</item>
+        <item name="trackTint">@color/mid_green</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="fontFamily">@font/barlow_medium</item>
+    </style>
+
+</resources>

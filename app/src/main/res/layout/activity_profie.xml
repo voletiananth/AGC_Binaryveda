@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_27sdp"
+        android:paddingEnd="@dimen/_16sdp">
+
+        <ImageView
+            android:id="@+id/agc_logo_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/agc_logo_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/heart_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ic_profile"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+
+                android:background="@color/cherry"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_person"
+                android:tint="@color/white"
+                app:contentPadding="@dimen/_7sdp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/ic_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_37sdp"
+                android:contentDescription="@string/plus_icon"
+                android:src="@drawable/ic_plus" />
+
+            <ImageView
+                android:id="@+id/ic_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_9sdp"
+                android:src="@drawable/ic_hamburger"
+                android:contentDescription="@string/menu_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_photo_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/agc_logo_profile">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/upload"
+                android:textAppearance="@style/text_style"
+                android:textColor="@color/cron_flower_blue"
+                android:textStyle="bold"
+                app:drawableTint="@color/cron_flower_blue"
+                app:drawableTopCompat="@drawable/ic_upload" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/profile_picture"
+                android:src="@drawable/profile_pic"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textAppearance="@style/text_style"
+                android:textColor="@color/cron_flower_blue"
+                android:textStyle="bold"
+                app:drawableTint="@color/cron_flower_blue"
+                app:drawableTopCompat="@drawable/ic_edit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="@string/profile_name"
+            android:textAppearance="@style/text_style_6"
+            android:textSize="@dimen/_36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_photo_lyt" />
+
+        <TextView
+            android:id="@+id/my_dashboard"
+            android:layout_width="@dimen/_113sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:text="@string/my_dashboard"
+            android:textAppearance="@style/text_style"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            style="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/my_dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/my_dashboard" />
+
+        <View
+            android:id="@+id/divider_profile_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:background="@color/divider_white"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_dashboard" />
+
+        <TextView
+            android:id="@+id/follower_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="@string/followers_count"
+            android:textAppearance="@style/text_style_4"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/artwork_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_profile_1" />
+
+        <TextView
+            android:id="@+id/artwork_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artwork_count"
+            android:textAppearance="@style/text_style_4"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/follower_count"
+            app:layout_constraintEnd_toStartOf="@id/exhibitions_count"
+            app:layout_constraintStart_toEndOf="@id/follower_count"
+            app:layout_constraintTop_toTopOf="@id/follower_count" />
+
+        <TextView
+            android:id="@+id/exhibitions_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exhibitions_count"
+            android:textAppearance="@style/text_style_4"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/artwork_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/artwork_count"
+            app:layout_constraintTop_toTopOf="@id/artwork_count" />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/followers"
+            app:layout_constraintEnd_toEndOf="@id/follower_count"
+            app:layout_constraintStart_toStartOf="@id/follower_count"
+            app:layout_constraintTop_toBottomOf="@id/follower_count" />
+
+        <TextView
+            android:id="@+id/artwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artworks"
+            app:layout_constraintEnd_toEndOf="@id/artwork_count"
+            app:layout_constraintStart_toStartOf="@id/artwork_count"
+            app:layout_constraintTop_toBottomOf="@id/artwork_count" />
+
+        <TextView
+            android:id="@+id/exhibitions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exhibitions"
+            app:layout_constraintEnd_toEndOf="@id/exhibitions_count"
+            app:layout_constraintStart_toStartOf="@id/exhibitions_count"
+            app:layout_constraintTop_toBottomOf="@id/exhibitions_count" />
+
+        <View
+            android:id="@+id/divider_profile_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/divider_white"
+            app:layout_constraintEnd_toEndOf="@id/divider_profile_1"
+            app:layout_constraintStart_toStartOf="@id/divider_profile_1"
+            app:layout_constraintTop_toBottomOf="@id/followers" />
+
+        <LinearLayout
+            android:id="@+id/reactions_lyt"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/divider_profile_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:drawableStart="@drawable/ic_heart"
+                android:drawablePadding="@dimen/_4sdp"
+                android:text="@string/likes"
+                android:textAppearance="@style/text_style_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:lineHeight="@dimen/_42sdp"
+                tools:ignore="TextContrastCheck" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_arrow_up"
+                android:drawablePadding="@dimen/_4sdp"
+                android:text="@string/votes"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:textAppearance="@style/text_style_2"
+                android:textSize="@dimen/_18sp"
+
+                app:lineHeight="@dimen/_42sdp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_share"
+                android:drawablePadding="@dimen/_4sdp"
+                android:drawableTint="@color/teal_blue"
+                android:text="@string/shares"
+                android:textAppearance="@style/text_style_2"
+                android:textSize="@dimen/_18sp"
+
+                app:lineHeight="@dimen/_42sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/palette_lyt"
+            app:layout_constraintTop_toBottomOf="@id/reactions_lyt"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_height="@dimen/_42sdp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pompadour" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/carmine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cherry" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/orangeRed" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/amber" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/palette"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:textAppearance="@style/text_style_5"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/palette_lyt"
+            app:layout_constraintBottom_toBottomOf="@id/palette_lyt"
+            app:layout_constraintStart_toStartOf="@id/palette_lyt"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/palette_lyt"
+            app:tabIndicatorColor="@color/amber"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="@dimen/_2sdp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabTextAppearance"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="16dp">
+
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:id="@+id/view_pager"
+            app:layout_constraintTop_toBottomOf="@id/tab_lyt"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

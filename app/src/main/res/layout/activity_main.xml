@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_44sdp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/agc_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/agc_logo"
+            android:paddingStart="@dimen/_24sdp"
+            android:paddingTop="@dimen/_31sdp"
+            android:paddingEnd="@dimen/_24sdp"
+            android:src="@drawable/agc_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/banner_art"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:contentDescription="@string/showcase_art"
+            android:scaleType="centerCrop"
+            android:src="@drawable/landing_page_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/agc_logo" />
+
+        <TextView
+            android:id="@+id/lorem_heading"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="80dp"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_33sdp"
+            android:layout_marginEnd="@dimen/_52sdp"
+            android:fontFamily="@font/barlow_condensed_light"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+
+            android:text="@string/tag_line_text"
+            android:textAppearance="@style/text_style_2"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner_art" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/register_button"
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/tomato"
+            app:cardCornerRadius="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@id/reg_tag_line"
+            app:layout_constraintStart_toStartOf="@id/lorem_heading"
+            app:layout_constraintTop_toBottomOf="@id/lorem_heading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:contentDescription="@string/forward_arrow"
+                    android:src="@drawable/ic_arrow_forward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_n4sdp"
+                    android:fontFamily="@font/barlow_condensed_extra_light"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_32sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/reg_tag_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+
+            android:fontFamily="@font/barlow_condensed_extra_light"
+            android:padding="@dimen/_0sdp"
+            android:text="@string/me_as_a_collector"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32sp"
+            app:layout_constraintBottom_toBottomOf="@id/register_button"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/register_button"
+            app:layout_constraintTop_toBottomOf="@id/lorem_heading" />
+
+        <ImageView
+            android:id="@+id/arrow_track"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_46sdp"
+            android:contentDescription="@string/forward_arrow"
+            android:src="@drawable/ic_arrow_forward"
+            app:layout_constraintEnd_toStartOf="@id/track"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_button"
+            app:tint="@color/cron_flower_blue" />
+
+        <TextView
+            android:id="@+id/track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_34sdp"
+            android:gravity="center"
+            android:text="@string/track_my_application"
+            android:textAppearance="@style/text_style_7"
+            android:textColor="@color/cron_flower_blue"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/arrow_track"
+            app:layout_constraintTop_toBottomOf="@id/register_button"
+             />
+
+        <LinearLayout
+            android:id="@+id/lorem_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_36sdp"
+            android:paddingEnd="@dimen/_28sdp"
+            android:paddingBottom="@dimen/_68sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/track">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:src="@drawable/ic_man"
+                android:contentDescription="@string/man_icon" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_man"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:contentDescription="@string/mobile_icon"
+                android:src="@drawable/ic_mobile" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_mobile"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lorem_spiral_icon"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:src="@drawable/ic_spiral" />
+
+            <TextView
+
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_spiral"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:contentDescription="@string/lorem_broadcast_icon"
+                android:src="@drawable/ic_broadcast" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_broadcast"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lorem_stat_icon"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_star"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:contentDescription="@string/lorem_book_icon"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_64sdp"
+                android:src="@drawable/ic_book" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/lorem_detail_book"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:contentDescription="@string/lorem_flag_icon"
+                android:src="@drawable/ic_flag" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/lorem_detail_flag"
+                android:textAppearance="@style/text_style_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/lorem_mouse_icon"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/ic_mouse" />
+
+            <TextView
+                android:layout_width="@dimen/_144sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_ipsum_is_used"
+                android:textAppearance="@style/text_style_4" />
+
+            <TextView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:text="@string/lorem_detail_mouse"
+                android:textAppearance="@style/text_style_2" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fb_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/facebook_logo"
+            android:src="@drawable/fb_logo"
+            app:layout_constraintEnd_toStartOf="@id/insta_logo"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lorem_details" />
+
+        <ImageView
+            android:id="@+id/insta_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/instagram_logo"
+            android:src="@drawable/instagram_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fb_logo"
+            app:layout_constraintTop_toTopOf="@id/fb_logo" />
+
+        <View
+            android:id="@+id/divider_line_top"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_33sdp"
+            android:layout_marginStart="21sp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/_21sdp"
+            android:background="@color/divider_white"
+            app:layout_constraintEnd_toEndOf="@id/insta_logo"
+            app:layout_constraintStart_toStartOf="@id/fb_logo"
+            app:layout_constraintTop_toBottomOf="@id/fb_logo" />
+
+        <ImageView
+            android:id="@+id/agc_logo_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:contentDescription="@string/agc_logo"
+            android:src="@drawable/agc_logo_1"
+            app:layout_constraintEnd_toEndOf="@id/divider_line_top"
+            app:layout_constraintStart_toStartOf="@id/divider_line_top"
+            app:layout_constraintTop_toBottomOf="@id/divider_line_top" />
+
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toStartOf="@id/linear_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/agc_logo_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textAppearance="@style/text_style_5"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/about_us"
+                android:textStyle="bold"
+                app:lineHeight="@dimen/_39sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/team"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_style_5"
+                app:lineHeight="@dimen/_39sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/reach_us"
+                android:textStyle="bold"
+                android:textAppearance="@style/text_style_5"
+                app:lineHeight="@dimen/_39sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_69sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_28sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linear_left"
+            app:layout_constraintTop_toBottomOf="@id/agc_logo_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/affiliattions"
+
+                android:textAppearance="@style/text_style_5"
+                android:textStyle="bold"
+                app:lineHeight="@dimen/_39sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textAppearance="@style/text_style_5"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="@string/disclaimers"
+                android:textStyle="bold"
+                app:lineHeight="@dimen/_39sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textAppearance="@style/text_style_5"
+                android:text="@string/privacy_policy"
+                android:textStyle="bold"
+                app:lineHeight="@dimen/_39sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_33sdp"
+            android:layout_marginStart="@dimen/_21sdp"
+            android:background="@color/divider_white"
+            app:layout_constraintEnd_toEndOf="@id/divider_line_top"
+            app:layout_constraintStart_toStartOf="@id/divider_line_top"
+            app:layout_constraintTop_toBottomOf="@id/linear_left" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawablePadding="@dimen/_8sdp"
+
+            android:textAppearance="@style/text_style_9"
+            android:text="@string/content_copyright_reserved"
+            app:drawableLeftCompat="@drawable/ic_copyright"
+            app:layout_constraintEnd_toEndOf="@id/divider_line_bottom"
+            app:layout_constraintStart_toStartOf="@id/divider_line_bottom"
+            app:layout_constraintTop_toBottomOf="@id/divider_line_bottom" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

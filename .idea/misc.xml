@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AGC/app/src/main/res/drawable/combinedshape.xml" value="0.18697916666666667" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/combinedshape_compact.xml" value="0.33125" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/ic_switch_thumb.xml" value="0.33125" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/ic_switcher.xml" value="0.33125" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/landing_page_banner.xml" value="1.745454484923814" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/rectanglecopy6.xml" value="0.33125" />
+        <entry key="..\:/AGC/app/src/main/res/drawable/switch_track.xml" value="0.33125" />
+        <entry key="..\:/AGC/app/src/main/res/font/barlow.xml" value="0.34" />
+        <entry key="..\:/AGC/app/src/main/res/font/barlow_condensed.xml" value="0.3453125" />
+        <entry key="..\:/AGC/app/src/main/res/font/bralow__condensed.xml" value="0.3453125" />
+        <entry key="..\:/AGC/app/src/main/res/layout-v23/activity_main.xml" value="0.22146739130434784" />
+        <entry key="..\:/AGC/app/src/main/res/layout/activity_main.xml" value="0.15879265091863518" />
+        <entry key="..\:/AGC/app/src/main/res/layout/activity_profie.xml" value="0.4363636212309535" />
+        <entry key="..\:/AGC/app/src/main/res/layout/art_gallery_item.xml" value="0.18788819875776397" />
+        <entry key="..\:/AGC/app/src/main/res/layout/art_gallery_list.xml" value="0.27717391304347827" />
+        <entry key="..\:/AGC/app/src/main/res/layout/landing_page_footer.xml" value="0.4363636212309535" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18788819875776397" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
