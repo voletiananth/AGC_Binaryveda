@@ -158,7 +158,7 @@
                 android:contentDescription="@string/man_icon" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -179,7 +179,7 @@
                 android:src="@drawable/ic_mobile" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -201,7 +201,7 @@
 
             <TextView
 
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -222,7 +222,7 @@
                 android:src="@drawable/ic_broadcast" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -243,7 +243,7 @@
                 android:src="@drawable/ic_star" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -264,7 +264,7 @@
                 android:src="@drawable/ic_book" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -285,7 +285,7 @@
                 android:src="@drawable/ic_flag" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -306,7 +306,7 @@
                 android:src="@drawable/ic_mouse" />
 
             <TextView
-                android:layout_width="@dimen/_144sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:text="@string/lorem_ipsum_is_used"
@@ -384,7 +384,7 @@
                 android:textAppearance="@style/text_style_5"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:text="@string/about_us"
-                android:textStyle="bold"
+
                 app:lineHeight="@dimen/_39sdp" />
 
             <TextView
@@ -393,7 +393,7 @@
                 android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:text="@string/team"
-                android:textStyle="bold"
+
                 android:textAppearance="@style/text_style_5"
                 app:lineHeight="@dimen/_39sdp" />
 
@@ -403,7 +403,7 @@
                 android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:text="@string/reach_us"
-                android:textStyle="bold"
+
                 android:textAppearance="@style/text_style_5"
                 app:lineHeight="@dimen/_39sdp" />
 
@@ -429,7 +429,7 @@
                 android:text="@string/affiliattions"
 
                 android:textAppearance="@style/text_style_5"
-                android:textStyle="bold"
+
                 app:lineHeight="@dimen/_39sdp" />
 
             <TextView
@@ -439,7 +439,7 @@
                 android:textAppearance="@style/text_style_5"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:text="@string/disclaimers"
-                android:textStyle="bold"
+
                 app:lineHeight="@dimen/_39sdp" />
 
             <TextView
@@ -449,7 +449,7 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:textAppearance="@style/text_style_5"
                 android:text="@string/privacy_policy"
-                android:textStyle="bold"
+
                 app:lineHeight="@dimen/_39sdp" />
 
         </LinearLayout>

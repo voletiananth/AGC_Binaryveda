@@ -133,7 +133,8 @@
             app:layout_constraintTop_toBottomOf="@id/profile_name" />
 
         <androidx.appcompat.widget.SwitchCompat
-            style="@style/SwitchStyle"
+            app:trackTint="@color/mid_green"
+            app:thumbTint="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -162,7 +163,7 @@
             android:text="@string/followers_count"
             android:textAppearance="@style/text_style_4"
             android:textSize="@dimen/_24sp"
-            android:textStyle="bold"
+
             app:layout_constraintEnd_toStartOf="@id/artwork_count"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider_profile_1" />
@@ -174,7 +175,7 @@
             android:text="@string/artwork_count"
             android:textAppearance="@style/text_style_4"
             android:textSize="@dimen/_24sp"
-            android:textStyle="bold"
+
             app:layout_constraintBottom_toBottomOf="@id/follower_count"
             app:layout_constraintEnd_toStartOf="@id/exhibitions_count"
             app:layout_constraintStart_toEndOf="@id/follower_count"
@@ -184,7 +185,7 @@
             android:id="@+id/exhibitions_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exhibitions_count"
+
             android:textAppearance="@style/text_style_4"
             android:textSize="@dimen/_24sp"
             android:textStyle="bold"

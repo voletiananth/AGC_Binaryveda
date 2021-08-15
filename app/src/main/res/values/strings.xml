@@ -16,7 +16,7 @@
     <string name="me_as_a_collector">me as a collector</string>
     <string name="track_my_application">track my application</string>
     <string name="forward_arrow">Forward Arrow</string>
-    <string name="lorem_ipsum_is_used">lorem ipsum is used</string>
+    <string name="lorem_ipsum_is_used">lorem ipsum\nis used</string>
     <string name="lorem_detail_man">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
     <string name="lorem_detail_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
     <string name="lorem_detail_spiral">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
