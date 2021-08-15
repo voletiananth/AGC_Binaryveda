@@ -163,7 +163,6 @@
             android:text="@string/followers_count"
             android:textAppearance="@style/text_style_4"
             android:textSize="@dimen/_24sp"
-
             app:layout_constraintEnd_toStartOf="@id/artwork_count"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider_profile_1" />
@@ -185,10 +184,10 @@
             android:id="@+id/exhibitions_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:textColor="@color/black"
             android:textAppearance="@style/text_style_4"
             android:textSize="@dimen/_24sp"
-            android:textStyle="bold"
+            android:text="@string/exhibitions_count"
             app:layout_constraintBottom_toBottomOf="@id/artwork_count"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/artwork_count"
