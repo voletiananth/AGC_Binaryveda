@@ -18,7 +18,7 @@ class ArtGalleryFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = ArtGalleryListBinding.inflate(layoutInflater)
-        initialize()
+
         return binding.root
     }
     private fun initialize(){
@@ -28,6 +28,11 @@ class ArtGalleryFragment: Fragment() {
             adapter = RecyclerViewAdapter(imagesIds)
         }
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initialize()
     }
 
 
